@@ -1,0 +1,62 @@
+html,
+body {
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    font-family: Courier, Monospace;
+}
+
+.add-subtract-buttons button {
+    width: 50px;
+    height: 50px;
+    padding: 6px;
+    box-sizing: content-box;
+    margin: 0 .4em .4em .4em;
+    font-size: 2.5em;
+    line-height: 1;
+    border-radius: 50%;
+    text-align: center;
+    transition: border .3s;
+    position: absolute;
+    z-index: 800
+}
+
+.add-subtract-buttons button {
+    transition: .3s;
+}
+
+#increment-button {
+    right: 1em;
+    bottom: .5em
+}
+
+#decrement-button {
+    left: 1em;
+    bottom: .5em;
+}
+
+#count-container {
+    line-height: 1;
+    font-size: 16em;
+    text-align: center;
+    opacity: 0;
+    animation: fadedown 1s ease-out 4s forwards
+}
+
+@media only screen and (orientation: landscape) {
+
+    #increment-button,
+    #decrement-button {
+        bottom: calc(50vh - 54px)
+    }
+
+    #increment-button {
+        right: .5em
+    }
+
+    #decrement-button {
+        left: .5em
+    }
+}
