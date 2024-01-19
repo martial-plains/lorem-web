@@ -503,9 +503,9 @@ dependencies = [
 
 [[package]]
 name = "h2"
-version = "0.3.20"
+version = "0.3.24"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "97ec8491ebaf99c8eaa73058b045fe58073cd6be7f596ac993ced0b0a0c01049"
+checksum = "bb2c4422095b67ee78da96fbb51a4cc413b3b25883c7717ff7ca1ab31022c9c9"
 dependencies = [
  "bytes",
  "fnv",
@@ -513,7 +513,7 @@ dependencies = [
  "futures-sink",
  "futures-util",
  "http",
- "indexmap 1.9.2",
+ "indexmap",
  "slab",
  "tokio",
  "tokio-util",
@@ -616,16 +616,6 @@ checksum = "e14ddfc70884202db2244c223200c204c2bda1bc6e0998d11b5e024d657209e6"
 dependencies = [
  "unicode-bidi",
  "unicode-normalization",
-]
-
-[[package]]
-name = "indexmap"
-version = "1.9.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1885e79c1fc4b10f0e172c475f458b7f7b93061064d98c3293e98c5ba0c8b399"
-dependencies = [
- "autocfg",
- "hashbrown 0.12.3",
 ]
 
 [[package]]
@@ -740,7 +730,7 @@ dependencies = [
  "futures",
  "getrandom",
  "html-escape",
- "indexmap 2.0.0",
+ "indexmap",
  "itertools",
  "js-sys",
  "leptos_reactive",
@@ -766,7 +756,7 @@ checksum = "6ef84aede40b027d1a4addd9bd54c89de722272429f7b21da40b04f9ebe5e3b2"
 dependencies = [
  "anyhow",
  "camino",
- "indexmap 2.0.0",
+ "indexmap",
  "parking_lot",
  "proc-macro2",
  "quote",
@@ -806,7 +796,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "329c4bbe4191a0bef6514bab827f2ff1a1e69bc2b431e78ac9799e2bdc26ae33"
 dependencies = [
  "cfg-if",
- "indexmap 2.0.0",
+ "indexmap",
  "leptos",
  "tracing",
  "wasm-bindgen",
@@ -822,7 +812,7 @@ dependencies = [
  "base64 0.21.2",
  "cfg-if",
  "futures",
- "indexmap 2.0.0",
+ "indexmap",
  "js-sys",
  "rustc-hash",
  "self_cell",
