@@ -1,1 +1,53 @@
-<!doctype html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0" name=viewport><script type=module>import a,*as b from"/lorem-web/lorem-b2c47c9bbc24f9dd.js";a(`/lorem-web/lorem-b2c47c9bbc24f9dd_bg.wasm`);window.wasmBindings=b</script><link href=/lorem-web/main-b1e6ec6fba3dc563.css integrity=sha384-QGOKsm6KDiGBJ9OlXndRk88zxMS3p0kaZQ5Jj6tolOSjQpsluf/+axK5g80PME89 rel=stylesheet><link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css rel=stylesheet><link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css rel=stylesheet><title>Lorem</title><link as=fetch crossorigin href=/lorem-web/lorem-b2c47c9bbc24f9dd_bg.wasm integrity=sha384-RBaBQjtLm+xSzGNYHz6IvWIfUTFXupluc44uzEXtHhY3JvLWkzv5wj1//1CuXQsE rel=preload type=application/wasm><link crossorigin href=/lorem-web/lorem-b2c47c9bbc24f9dd.js integrity=sha384-B9HrYOLX4t2hHmcCiA3ogVjxWToL0k3Ez4o9XDSRmkW+/8ArAGDDfZQ8R6oHLB0s rel=modulepreload></head><body class="bg-gray-100 dark:bg-slate-800"><script>((a=>{let c=1,d=`&`,e=null;if(a.search[c]===`/`){var b=a.search.slice(c).split(d).map((a=>a.replace(/~and~/g,d))).join(`?`);window.history.replaceState(e,e,a.pathname.slice(0,-c)+ b+ a.hash)}})(window.location))</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  
+<script type="module">
+import init, * as bindings from '/lorem-web/lorem-2de7a8e51b556a91.js';
+const wasm = await init('/lorem-web/lorem-2de7a8e51b556a91_bg.wasm');
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+  <link rel="stylesheet" href="/lorem-web/main-f5cc61ed5f839edc.css" integrity="sha384-rCmSTiZEzVrt+KcoDSsbT0NwMEmpA5UyBCprUYH4Hz5H9CMUn29VIu3J+lswv7B7"/>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css">
+  <title>Lorem</title>
+<link rel="modulepreload" href="/lorem-web/lorem-2de7a8e51b556a91.js" crossorigin="anonymous" integrity="sha384-TsTTqGyfM1tTif8o7HDQRBhetupAmd0v0C0nYvPm/cHGU9AC51N4Ad0snpb/FXgq"><link rel="preload" href="/lorem-web/lorem-2de7a8e51b556a91_bg.wasm" crossorigin="anonymous" integrity="sha384-NbDqTjIftEQQYu9NTHn95nh/uAVDSFTXKn4eOwPQZecjhFBiACKLzlWWc0xnMUCd" as="fetch" type="application/wasm"></head>
+
+<body class="bg-gray-100 dark:bg-slate-800">
+  <!-- Start Single Page Apps for GitHub Pages -->
+  <script type="text/javascript">
+    // Single Page Apps for GitHub Pages
+    // MIT License
+    // https://github.com/rafgraph/spa-github-pages
+    // This script checks to see if a redirect is present in the query string,
+    // converts it back into the correct url and adds it to the
+    // browser's history using window.history.replaceState(...),
+    // which won't cause the browser to attempt to load the new url.
+    // When the single page app is loaded further down in this file,
+    // the correct url will be waiting in the browser's history for
+    // the single page app to route accordingly.
+    (function (l) {
+      if (l.search[1] === '/') {
+        var decoded = l.search.slice(1).split('&').map(function (s) {
+          return s.replace(/~and~/g, '&')
+        }).join('?');
+        window.history.replaceState(null, null,
+          l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location))
+  </script>
+  <!-- End Single Page Apps for GitHub Pages -->
+</body>
+
+</html>
